@@ -2,7 +2,12 @@
 
 Los tipos enumerados en Java permiten definir un conjunto de constantes con nombre, lo que facilita la lectura y el mantenimiento del código.
 
+### Vamos allá: https://www.w3schools.com/java/java_enums.asp
+
 1. Ejemplo básico:
+
+Este ejemplo define un tipo enumerado `DiaSemana` que contiene los días de la semana. Se crea una variable `hoy` de tipo `DiaSemana` y se le asigna el valor `MARTES`.
+
 ```
 enum DiaSemana {
   LUNES, MARTES, MIERCOLES, JUEVES, VIERNES, SABADO, DOMINGO
@@ -15,9 +20,11 @@ public class EjemploEnum {
   }
 }
 ```
-Este ejemplo define un tipo enumerado `DiaSemana` que contiene los días de la semana. Se crea una variable `hoy` de tipo `DiaSemana` y se le asigna el valor `MARTES`. Luego se imprime el valor de `hoy` en la consola.
 
 2. Ejemplo con constructor y método:
+
+En este ejemplo definimos un tipo enumerado `Color` que tiene tres constantes: `ROJO`, `VERDE` y `AZUL`. Cada una de ellas tiene un constructor que recibe los valores de los componentes RGB y los asigna a las variables `r`, `g` y `b`. Además, se define un método `getRGB()` que devuelve una cadena con los valores de los componentes RGB de cada color. En el método principal se crea una variable `miColor` de tipo `Color` y se le asigna el valor `ROJO`.
+
 ```
 enum Color {
   ROJO(255, 0, 0),
@@ -44,7 +51,7 @@ public class EjemploEnum {
   }
 }
 ```
-En este ejemplo se define un tipo enumerado `Color` que tiene tres constantes: `ROJO`, `VERDE` y `AZUL`. Cada una de ellas tiene un constructor que recibe los valores de los componentes RGB y los asigna a las variables `r`, `g` y `b`. Además, se define un método `getRGB()` que devuelve una cadena con los valores de los componentes RGB de cada color. En el método principal se crea una variable `miColor` de tipo `Color` y se le asigna el valor `ROJO`. Luego se imprime el valor de `miColor.getRGB()` en la consola.
+
 
 
 
